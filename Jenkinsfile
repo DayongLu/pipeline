@@ -21,6 +21,7 @@ pipeline {
                 junit 'reports/**/*.xml'
 
             }
+        }
             
         stage('Deploy-To-DEV'){
             steps {
@@ -29,7 +30,7 @@ pipeline {
                 
 
             }
-
+        }
 
 
         }
