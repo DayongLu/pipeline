@@ -9,7 +9,12 @@ pipeline {
                 git credentialsId: '6e08ec68-b60e-478c-8956-629fe8ace709', url: 'https://github.com/DayongLu/greeting-service.git'
 
 
-                pwd()
+                echo pwd()
+
+                withMaven(maven: 'maven352'){
+                    sh 'mvn clean package'
+                }
+
             }
 
 
