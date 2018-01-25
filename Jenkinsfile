@@ -11,8 +11,8 @@ pipeline {
                 withMaven(maven: 'maven352'){
                     sh 'mvn clean package'
                 }
-
             }
+        }
             
         stage('Integration-Test'){
             steps {
@@ -33,6 +33,6 @@ pipeline {
         }
 
 
-        }
+        
     }
 }
