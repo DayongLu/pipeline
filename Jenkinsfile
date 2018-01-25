@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo 'Running Integration Test'
 
-                junit 'reports/**/*.xml'
+                junit 'surefire-reports/**/*.xml'
 
             }
         }
